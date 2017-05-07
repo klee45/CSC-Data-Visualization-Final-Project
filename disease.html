@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>US Weekly Disease</title>
+  <div class="row">
+    <div id="plot" class="col-md-12"></div>
+  </div>
+  <link rel="stylesheet" type="text/css" href="disease.css">
+  <link rel="stylesheet" href="d3.slider.css" />
+
+  <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+</head>
+
+<body>
+  <h2 class = "year"></h2>
+  <script type="text/javascript" src="disease.js"></script>
+
+  <p class = "cDisease"> Choose the disease! </p>
+  <select id="sortby_field_disease" class="disease" aria-labelledby="sortby_label">
+  </select>
+
+  <p class = "cSpeed"> Choose the delay </p>
+  <select id="sortby_field_speed" class="speed" aria-labelledby="sortby_label">
+    <option id="option" value=1000>Slow</option>
+    <option id="option" value=500 selected="">Medium</option>
+    <option id="option" value=250>Fast</option>
+    <option id="option" value=125>Very Fast</option>
+  </select>
+
+  <img id="season_image" class="season">
+</body>
+</html>
